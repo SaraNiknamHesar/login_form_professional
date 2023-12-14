@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+    .project-title {
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+        font-size: 34px;
+        color: #000000;
+
+    }
+
+    body {
+        background-color: #f6f5f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    input, button {
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 20px 0 30px 0;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+    a {
+        color: #333;
+        font-size: 18px;
+        margin: 15px 0;
+
+    }
+
+    button {
+        border-radius: 5px;
+        border: 1px solid #dcdcdc;
+        background-color: #3498db;
+        color: white;
+        font-size: 14px;
+        padding: 6px 45px;
+        transition: transform .80ms ease-in;
+    }
+
+    .btn-register {
+        background-color: #27ae60;
+        margin-top: 20px;
+    }
+
+    button {
+        transform: scale(0.9);
+
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    button.ghost-btn {
+        background-color: transparent;
+        color: #ffffff;
+    }
+
+    form {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 100%;
+        text-align: center;
+    }
+
+    input {
+        background-color: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: 8px 0;
+        width: 100%;
+    }
+
+    .container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+        position: relative;
+        overflow: hidden;
+        width: 768px;
+        min-height: 480px;
+        max-width: 100%;
+    }
+
+    .form-container {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all .6s ease-out;
+    }
+
+    .sign-in-container {
+        right: 0;
+        width: 50%;
+        z-index: 2;
+    }
+
+    .social-container {
+        margin: 20px 0;
+    }
+
+    .social-container a {
+        border: 1px solid #dddd;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
+<body>
+<p class="project-title">Login from 4</p>
+<div class="container">
+    <div class="form-container sign-up-container">
+        <form>
+            <h1>Sign up via social</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <span>or</span>
+            <input type="text" placeholder="username...">
+            <input type="email" placeholder="email...">
+            <input type="password" placeholder="password...">
+            <button class="btn-register" type="">sign up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form>
+            <h1>Sign in via social networks</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <span>or</span>
+            <input type="text" placeholder="username...">
+            <input type="email" placeholder="email...">
+            <input type="password" placeholder="password...">
+            <a href="">forget your password ?</a>
+            <button class="btn-login" type="">sign in</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>welcome</h1>
+                <p>To unlock all site features, please log in.</p>
+                <button class="ghost-btn" id="signIn">Membership</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>welcome</h1>
+                <p>Join the site in under a minute if you're not a member yet.</p>
+                <button class="ghost-btn" id="signUp">Membership</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
